@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+      http://www.springframework.org/schema/context 
+      http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<bean id="beanA" class="com.husrev.A"></bean>
+
+	<bean id="beanB" class="com.husrev.B" lazy-init="true"
+	scope="singleton">
+		<constructor-arg ref="beanA" />
+		<property name="mesaj" value="FSM" />
+		<property name="sayi" value="1453" />
+		<!-- <property name="aObject" ref="beanA"></property> -->
+	</bean>
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<!-- <bean id="beanOgrenci" class="com.husrev.Ogrenci"> <property name="adi" 
+		value="Murat"></property> <property name="soyadi" value="Aslan"></property> 
+		<property name="numarasi" value="20111"></property> </bean> -->
+
+	<bean id="beanOgrenci" class="com.husrev.Ogrenci" 
+		p:adi="Murat"
+		p:soyadi="Aslan" 
+		p:numarasi="20111" p:universite-ref="beanOkul">
+	</bean>
+
+	<bean id="beanOkul" class="com.husrev.Okul">
+		<property name="kurumAdi" value="Gazi University"></property>
+
+	</bean>
+</beans>

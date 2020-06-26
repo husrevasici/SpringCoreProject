@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<!-- <bean id="beanAdres" class="com.husrev.Adres"> 
+		<property name="sehir" value="Ankara"></property>
+		<property name="semt" value="Maltepe"></property> 
+		<property name="mahalle" value="Anittepe"></property> 
+		<property name="cadde" value="GMK"></property> 
+		<property name="no" value="129"></property> 
+		<property name="daire" value="7"></property> </bean> -->
+
+	<bean id="beanAdres" class="com.husrev.Adres" 
+		p:sehir="Ankara"
+		p:semt="Maltepe" 
+		p:mahalle="Anittepe" 
+		p:cadde="GMK" 
+		p:no="129"
+		p:daire="7">
+	</bean>
+
+<!-- 	<bean id="beanCalisan" class="com.husrev.Calisan"
+		c:adi="Mulla Husrev" 
+		c:soyadi="Asici" 
+		c:yasi="26"
+		c:adres-ref="beanAdres">
+	</bean> -->
+
+	<bean id="beanCalisan" class="com.husrev.Calisan"
+		c:_0="Mulla Husrev" 
+		c:_1="Asici" 
+		c:_2="26" 
+		c:_3-ref="beanAdres">
+	</bean>
+
+</beans>
