@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.mimaraslan&apos; to &apos;com.husrevasici&apos;&#x0D;&#x0A;- Original project: &apos;DenemeProject&apos;&#x0D;&#x0A;- Original element: &apos;DenemeProject/src/com.mimaraslan&apos;&#x0D;&#x0A;- Renamed element: &apos;DenemeProject/src/com.husrevasici&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.mimaraslan&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.mimaraslan" name="com.husrevasici" qualified="false" references="true" stamp="1592723586271" textual="false" version="1.0"/>
-</session>

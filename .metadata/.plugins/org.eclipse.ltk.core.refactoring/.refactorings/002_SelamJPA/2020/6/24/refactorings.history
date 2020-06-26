@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 packages to &apos;0002_SelamJPA/src&apos;&#x0D;&#x0A;- Original project: &apos;002_SelamJPA&apos;&#x0D;&#x0A;- Destination element: &apos;0002_SelamJPA/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     002_SelamJPA/src/com.mimaraslan&#x0D;&#x0A;     002_SelamJPA/src/com.jpatest" description="Copy packages" destination="=0002_SelamJPA/src" element1="/src&lt;com.mimaraslan" element2="/src&lt;com.jpatest" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1591836524408" version="1.0"/>
-</session>
