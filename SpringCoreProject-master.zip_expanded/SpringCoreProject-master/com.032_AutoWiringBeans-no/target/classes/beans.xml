@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="beanCalisan" class="com.husrev.Calisan"
+		autowire="constructor">
+
+		<!-- property'lerin icinde tekrardan class ismini tanımlanmaz -->
+		<!-- <constructor-arg ref="beanAdres"/> -->
+		<property name="adi" value="Mulla Husrev" />
+		<property name="soyadi" value="Asici" />
+
+	</bean>
+
+	<bean id="beanAdres" class="com.husrev.Adres">
+		<property name="tamAdresi" value="Cankaya-Ankara-Anittepe"></property>
+	</bean>
+
+</beans>

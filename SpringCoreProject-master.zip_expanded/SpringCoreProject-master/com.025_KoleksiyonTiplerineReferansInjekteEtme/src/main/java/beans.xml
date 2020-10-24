@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="Ogrenci" class="com.husrev.Ogrenci">
+		<property name="adi" value="Mulla Husrev" />
+		<property name="bolumu" value="Bilgisayar Muhendisligi" />
+		<property name="soyadi" value="Asici" />
+		<property name="yasi" value="26" />
+	</bean>
+
+	<bean id="Collection" class="com.husrev.Collection">
+		<property name="list">
+			<list>
+				<value>**</value>
+				<ref bean="Ogrenci" />
+				<bean class="com.husrev.Ogrenci">
+					<property name="adi" value="Mulla Husrev" />
+					<property name="bolumu" value="Bilgisayar Muhendisligi" />
+					<property name="soyadi" value="Asici" />
+					<property name="yasi" value="26" />
+				</bean>
+			</list>
+		</property>
+
+		<property name="set">
+			<set>
+				<value>****</value>
+				<ref bean="Ogrenci" />
+				<bean class="com.husrev.Ogrenci">
+					<property name="adi" value="Mulla Husrev" />
+					<property name="bolumu" value="Bilgisayar Muhendisligi" />
+					<property name="soyadi" value="Asici" />
+					<property name="yasi" value="26" />
+				</bean>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="Cicek" value="Süleyman"></entry>
+				<entry key="Bacanli" value-ref="Ogrenci"></entry>
+				<entry key="Asici">
+					<bean class="com.husrev.Ogrenci">
+						<property name="adi" value="Mulla Husrev" />
+						<property name="bolumu" value="Bilgisayar Muhendisligi" />
+						<property name="soyadi" value="Asici" />
+						<property name="yasi" value="26" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+
+		<property name="prob">
+			<props>
+				<prop key="PrimeFaces">Bilal</prop>
+				<prop key="JSP">Hasan</prop>
+				<prop key="Hibernate">Mehmet/prop</prop>
+				<prop key="Spring">Enes</prop>
+			</props>
+		</property>
+
+	</bean>
+</beans>

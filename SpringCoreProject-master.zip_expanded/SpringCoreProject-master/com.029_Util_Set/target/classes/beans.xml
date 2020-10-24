@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+
+	<bean id="BeanSet" class="com.husrev.Personel">
+		<property name="listemiz">
+			<util:set set-class="java.util.TreeSet">
+				<value>Mulla Husrev Asici</value>
+				<value>Cihad Yilmaz</value>
+				<value>Suleyman Cicek</value>
+				<value>Okan Senol</value>
+			</util:set>
+		</property>
+	</bean>
+</beans>
