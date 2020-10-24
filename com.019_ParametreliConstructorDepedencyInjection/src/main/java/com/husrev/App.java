@@ -15,11 +15,12 @@ public class App {
 		// asagida spring f. ile yapilisi vardir.
 
 		B b = (B) context.getBean("beanB");
-
-		b.sonucuGoster();
-		System.out.println("*****************");
-
-		C c = (C) context.getBean("beanC");
+//
+//		b.sonucuGoster();
+//		System.out.println("*****************");
+//
+//		C c = (C) context.getBean("beanC");
+//		A a = (A) context.getBean("beanA");
 
 	}
 }

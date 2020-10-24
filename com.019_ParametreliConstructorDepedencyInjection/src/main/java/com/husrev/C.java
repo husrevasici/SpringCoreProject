@@ -7,9 +7,10 @@ public class C {
 	}
 
 	public C(A aObject, B bObject) {
-		System.out.println("C sinifin [A aObject: " + aObject + "B bObject: " + bObject + "] constructor'u\n");
-		aObject.konsolaYaz();
-		bObject.sonucuGoster();
+		System.out.println("C sinifin [aObject: " + aObject + " bObject: " + bObject + "] constructor'u\n");
+//		aObject.konsolaYaz();
+//		bObject.sonucuGoster();
+		System.out.println("C contructor bitimi");
 	}
 
 	public C(String mesaj, int sayi) {

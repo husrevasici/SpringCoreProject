@@ -7,18 +7,39 @@
       http://www.springframework.org/schema/context 
       http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
-	<bean id="beanA" class="com.husrev.A"/>
+
+
+	<bean id="beanD" class="com.husrev.D">
+		<constructor-arg ref="beanA" />
+		<constructor-arg ref="beanB" />
+	</bean>
+
+	<bean id="beanA" class="com.husrev.A" />
 
 	<bean id="beanB" class="com.husrev.B" scope="singleton">
 		<constructor-arg ref="beanA" />
 	</bean>
 	<bean id="beanC" class="com.husrev.C">
-		<constructor-arg ref="beanA"/>
-		<constructor-arg ref="beanB"/>
 
-<!-- 		<constructor-arg type="int" value="123 " /> -->
-<!-- 		<constructor-arg type="java.lang.String" -->
-<!-- 			value="Mulla Husrev Asici" /> -->
+		<constructor-arg ref="beanA" />
+		<constructor-arg ref="beanB" />
 
+		<!-- <constructor-arg type="int" value="123 " /> -->
+		<!-- <constructor-arg type="java.lang.String" -->
+		<!-- value="Mulla Husrev Asici" /> -->
+
+	</bean>
+
+	<!-- aynı class'lara farkli bean id 'ler ile ulasma -->
+
+	<bean id="beanD2" class="com.husrev.D">
+		<constructor-arg ref="beanA2" />
+		<constructor-arg ref="beanB2" />
+	</bean>
+
+	<bean id="beanA2" class="com.husrev.A" />
+
+	<bean id="beanB2" class="com.husrev.B" scope="singleton">
+		<constructor-arg ref="beanA2" />
 	</bean>
 </beans>
