@@ -45,4 +45,9 @@ public class Calisan {
 		this.adres = adres;
 	}
 
+	@Override
+	public String toString() {
+		return "Calisan [adi=" + adi + ", soyadi=" + soyadi + ", yasi=" + yasi + ", adres=" + adres + "]";
+	}
+
 }

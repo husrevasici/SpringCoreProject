@@ -18,7 +18,9 @@ public class App {
 
 		// Ust satirdaki oop ile cagirdimiz b sinifina ait contructor metodunu
 		// asagida spring f. ile yapilisi vardir.
+
 		B b = (B) context.getBean("beanB");
+		System.out.println();
 		b.sonucuGoster();
 		System.out.println(b.getMesaj() + " " + b.getSayi());
 		System.out.println(b.getaObject());

@@ -3,7 +3,7 @@ package com.husrev;
 public class A {
 
 	public A() {
-		System.out.println("A sinifa ait constructor metodu\n");
+		System.out.println("A sinifa ait constructor metodu");
 	}
 
 	public void konsolaYaz() {

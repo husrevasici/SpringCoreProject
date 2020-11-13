@@ -51,4 +51,10 @@ public class Adres {
 		this.daire = daire;
 	}
 
+	@Override
+	public String toString() {
+		return "Adres [sehir=" + sehir + ", semt=" + semt + ", mahalle=" + mahalle + ", cadde=" + cadde + ", no=" + no
+				+ ", daire=" + daire + "]";
+	}
+
 }
